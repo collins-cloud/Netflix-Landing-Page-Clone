@@ -1,0 +1,426 @@
+@font-face{
+font-family:"poppins";
+src:url("Poppins-Regular.ttf");
+}
+
+*{
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+  font-family:poppins;
+  color:white;
+}
+
+button{
+cursor:pointer;
+}
+
+body{
+  height:150vh;
+  background:url("background.jpg");
+  position:relative;
+  z-index:1;
+}
+
+hr{
+opacity:0.2;
+}
+
+body:before{
+  content:"";
+  position:absolute;
+  height:200vh;
+  width:100%;
+  background-color:#000000C4;
+  z-index:-1;
+  
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  width:100%;
+  top:-2px;
+  border-bottom-color:#C6C6C699;
+  backdrop-filter:blur(5px);
+  z-index:9999;
+  background-color:#00000054;
+}
+
+.Netflix-logo{
+width:100px;
+}
+
+.sign-btn{
+  background-color:#6A0000;
+  font-weight:bold;
+  color:white;
+  border:none;
+  margin-right:10px;
+  height:40px;
+  width:80px;
+  border-radius:5px;
+  transition:0.2s;
+}
+
+.sign-btn:hover{
+  background-color:#D40617;
+}
+
+.hero-section{
+padding-top:40px;
+margin-top:40px;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+margin-bottom:150px;
+}
+
+.head1{
+  color:white;
+  line-height:35px;
+}
+
+.hero-text{
+  margin-top:15px;
+  color:white;
+}
+
+.text{
+  padding:0px 30px;
+  font-size:12px;
+  margin-top:18px;
+  font-weight:bold;
+  line-height:20px;
+  color:white;
+}
+
+.entry{
+  margin-top:40px;
+position:relative;
+}
+
+
+.head-input{
+  margin-top:20px;
+  height:50px;
+  width:20rem;
+  background-color:#6B00008C;
+  border:solid #D90114;
+  outline:none;
+  padding-left:10px;
+  font-size:15px;
+  border-radius:10px;
+  color:white;
+}
+
+.head-label{
+  position:absolute;
+  top:35px;
+  left:10px;
+  z-index:1000px;
+  font-weight:200px;
+  color:white;
+  transition:0.2s;
+}
+
+.head-input:focus{
+  border-color:#890000;
+}
+
+.head-input:focus + .head-label,
+.head-input:valid + .head-label{
+  top:1px;
+  font-size: 15px;
+}
+
+.started{
+  margin-top:30px;
+  font-size:18px;
+  background-color:#690009;
+  border:none;
+  color: white;
+  font-weight:300px;
+  padding:10px 20px;
+  border-radius:5px;
+  transition:1s;
+}
+
+.started:hover{
+background-color:#D40617;
+}
+
+
+.main-section{
+  margin-top:200px;
+background:radial-gradient(circle at top,#060066,#000000,#000000,#000000,#000000,#000000,#000000,#000000,#000000,#000000,#000000,#000000,#000000,#000000,#000000,#000000 100%);
+height:380vh;
+width:100%;
+border-top-left-radius:100px;
+border-top-right-radius:100px;
+position:relative;
+padding:25px;
+}
+
+.main-section::before{
+  content:"";
+position:absolute;
+background:linear-gradient(to bottom left,#E90606,#FF22DE);
+height:100vh;
+inset:-3px;
+top:-5px;
+right:2px;
+border-top-left-radius:100px;
+border-top-right-radius:100px;
+z-index:-1;
+}
+
+.mainp{
+color:white;
+font-weight:bold;
+font-size:20px;
+text-align:center;
+margin-bottom:-6px;
+}
+
+.slider-container{
+  
+position:relative;
+width:100%;
+border-radius:50px;
+}
+
+.slide-img{
+  padding-top:30px;
+  margin-top:20px;
+width:100%;
+overflow-x:auto;
+display:flex;
+gap:10px;
+border-radius:30px;
+scroll-behaviour:smooth;
+overflow-x:auto;
+overflow-y:visible;
+padding-left:15px;
+padding-right:20px;
+}
+
+.slide-img::-webkit-scrollbar{
+  display:none;
+}
+
+.slide-img img{
+  height:15rem;
+  width:15rem;
+  object-position:center;
+  object-fit:center;
+  border-radius:10px;
+  transition:0.5s;
+}
+
+.slide-img img:hover{
+margin-top:-15px;
+box-shadow:5px 5px 3;
+}
+
+.prev{
+  padding:10px 0px;
+  width:30px;
+  border-radius:10px;
+  border:none;
+  color:white;
+  background-color:#820014;
+  position:absolute;
+  bottom:90px;
+  left:-10px;
+  transition:0.5s;
+}
+
+
+.next{
+  padding: 10px 0px;
+  width:30px;
+  border-radius:10px;
+  border:none;
+  color:white;
+  background-color:#820014;
+  position:absolute;
+  bottom:90px;
+  right:-10px;
+  transition:0.5s;
+}
+
+.slider-container button:hover{
+width:40px;
+background-color:#EC0000;
+}
+
+.talk-more{
+color:white;
+margin-top:50px;
+margin-left:5px;
+font-weight:bold;
+}
+
+.container{
+  margin-top:15px;
+  background:linear-gradient(to bottom right,#53010D,#3B0037);
+  border-radius:15px;
+  padding:10px;
+}
+
+.container h3{
+  margin-bottom:15px;
+  font-weight:700;
+}
+
+.container p{
+color:#BEBEBE;
+margin-bottom:60px;
+}
+
+
+.faq-section{
+  margin-top:60px;
+}
+
+.questions{
+  background-color:#8B0000;
+  margin-top:20px;
+  border-radius:10px;
+  padding-top:5px;
+  padding-left:5px;
+  overflow:hidden;
+  height:50px;
+  cursor:pointer;
+  padding-right:15px;
+  transition:0.5s;
+}
+
+.questions p{
+  margin-top:10px;
+  font-size:15px;
+  margin-bottom:15px;
+}
+
+.questions h3{
+  display:flex;
+  align-items:center;
+}
+
+
+.questions:hover{
+  overflow:visible;
+  height:330px;
+}
+
+.questions h3 span{
+  margin-left:auto;
+  font-size:30px;
+}
+
+.questions:hover span{
+transform:rotate(45deg);
+}
+
+#yeah:hover{
+  height:200px;
+}
+
+.omor{
+  margin-top:50px;
+  font-size:15px;
+}
+
+.another-input{
+margin-top:40px;
+height:3rem;
+width:19rem;
+background-color:rgba(0,0,0,0.1);
+border:solid rgba(246, 246, 246, 0.52);
+padding-left:10px;
+border-radius:4px;
+outline:none;
+}
+
+.entry-sec{
+  position:relative;
+}
+
+.entry-label{
+  position:absolute;
+  left:20px;
+  top:50px;
+  transition:0.5s;
+  color:#ADADAD;
+}
+
+.another-input:focus{
+border:1px solid #F41439;
+}
+
+.another-input:valid+.entry-label,
+.another-input:focus+.entry-label{
+font-size:15px;
+top:20px;
+color:red;
+}
+
+#start{
+  margin-top:10px;
+  font-size:15px;
+}
+
+footer{
+  background-color:black;
+  height:90vh;
+  padding:px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  margin-top:55px;
+}
+
+footer a{
+color:#898989;
+font-size:14px;
+}
+
+.eng{
+background-color:black;
+border:1px solid white;
+font-weight:bold;
+width:40px;
+height:40px;
+padding-right:80px;
+padding-left:40px;
+border-radius:20px;
+margin-top:25px;
+cursor:pointer;
+transition:0.5s;
+}
+
+.eng:hover{
+  border:2px solid;
+}
+
+.last-get{
+  position:sticky;
+  bottom:0px;
+  padding:10px 50px;
+  background-color:#740006;
+  border:none;
+  font-size:15px;
+  border-radius:10px;
+  margin-top:20px;
+  box-shadow:10px -20px 50px #000000CC;
+  transition:0.5s;
+}
+
+.last-get:hover{
+  background-color:#FF1212;
+}
+
