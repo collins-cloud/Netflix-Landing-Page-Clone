@@ -5,31 +5,31 @@ A responsive clone of the Netflix landing page built to practice modern frontend
 https://collins-cloud.github.io/Netflix-Landing-Page-Clone/
 
 # 🛠️ Built With
-• HTML5
-• CSS3
-• JavaScript
+- HTML5
+- CSS
+- JavaScript
 
 # Features
-• Responsive layout for mobile, tablet, and desktop
-• Hero section with background image overlay
-• Email sign-up call-to-action
-• Feature sections similar to Netflix
-• Clean UI and typography
-• Hover effects and transitions
+- Responsive layout for mobile, tablet, and desktop
+- Hero section with background image overlay
+- Email sign-up call-to-action
+- Feature sections similar to Netflix
+- Clean UI and typography
+-  Hover effects and transitions
 
 # What I Learned
-• Building responsive layouts
-• Using Flexbox and CSS Grid
-• Styling large hero sections
-• Creating reusable components
-• Improving visual hierarchy
+- Building responsive layouts
+-  Using Flexbox and CSS Grid
+- styling large hero sections
+- Creating reusable components
+- Improving visual hierarchy
 
 # Future Improvements
-• Add animations and micro-interactions
-• Implement form validation
-• Dark/light theme toggle
-• Add accessibility improvements
-• Convert to React or Next.js
+- Add animations and micro-interactions
+- Implement form validation
+- Dark/light theme toggle
+- Add accessibility improvements
+- Convert to React or Next.js
 
 # Disclaimer
 This project is for educational purposes only.
